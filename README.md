@@ -10,6 +10,28 @@ The following shows what I did step by step.
 
 Each step can be found on the cooresponding branch.
 
+## step 02 screen layout
+**Note:** Leaving out the git commands from this step on.
+
+The current season shows not only the season details but also has two
+sub-tabs: one for the quarters of the season and one for the games of 
+the season.
+
+A simplified mock up showing the season with the quarterly tab
+
+![current poker game](this-and-that/img/Season_Quarterly.png)
+
+The same mock up showing the season with the games tab
+
+![current poker game](this-and-that/img/Season_games.png)
+
+#### Presentation (react) components
+* Details
+* Quaters
+* Games
+
+Created the skelton for the react components for the bulleted items above.
+Changed the main App to include the new react components.
 
 ## step 01 create development environment
 To get started did the following.
