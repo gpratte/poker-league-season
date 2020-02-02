@@ -8,12 +8,14 @@ import Button from 'react-bootstrap/Button';
 import SeasonDetails from './SeasonDetails'
 import Standings from '../common/Standings'
 import Quarters from './Quarters'
+import Games from './Games'
 
 class Season extends React.Component {
   render() {
     const season = this.props.value;
     return (
       <div>
+        <h2>sdf</h2>
         <Accordion>
           <Card>
             <Card.Header>
@@ -27,14 +29,14 @@ class Season extends React.Component {
           </Card>
         </Accordion>
 
-        <Standings value={season.players}/>
+        <Standings value={ {players: season.players} }/>
 
         <Tabs className="style1" defaultActiveKey="profile" id="uncontrolled-tab-example">
           <Tab className="style2" eventKey="quarters" title="&nbsp;&nbsp;&nbsp;Quarters&nbsp;&nbsp;&nbsp;">
             <Quarters value={season.quarterlySeasons}/>
           </Tab>
           <Tab className="style2" eventKey="games" title="&nbsp;&nbsp;&nbsp;Games&nbsp;&nbsp;&nbsp;">
-            <h1>Games</h1>
+            <Games value={season.games}/>
           </Tab>
         </Tabs>
       </div>

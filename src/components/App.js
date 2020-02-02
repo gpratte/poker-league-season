@@ -36,6 +36,7 @@ class App extends React.Component {
 
     players: [
       {
+        id: 1,
         playerId: 22,
         seasonId: 1234,
         name: 'Josh Bygosh',
@@ -45,6 +46,7 @@ class App extends React.Component {
         forfeit: false
       },
       {
+        id: 2,
         playerId: 23,
         seasonId: 1234,
         name: 'Mal Reynolds',
@@ -54,6 +56,7 @@ class App extends React.Component {
         forfeit: false
       },
       {
+        id: 3,
         playerId: 24,
         seasonId: 1234,
         name: 'Zoe Washburne',
@@ -66,11 +69,13 @@ class App extends React.Component {
 
     payouts: [
       {
+        id: 1,
         seasonId: 1234,
         place: 1,
         amount: 1550
       },
       {
+        id: 2,
         seasonId: 1234,
         place: 2,
         amount: 1345
@@ -93,6 +98,7 @@ class App extends React.Component {
         lastCalculated: 1597449600000,
         players: [
           {
+            id: 1,
             playerId: 4,
             seasonId: 1234,
             qSeasonId: 5,
@@ -102,6 +108,7 @@ class App extends React.Component {
             place: 1
           },
           {
+            id: 2,
             playerId: 5,
             seasonId: 1234,
             qSeasonId: 5,
@@ -113,18 +120,21 @@ class App extends React.Component {
         ],
         payouts: [
           {
+            id: 1,
             seasonId: 1234,
             qSeasonId: 5,
             place: 1,
             amount: 1100
           },
           {
+            id: 2,
             seasonId: 1234,
             qSeasonId: 5,
             place: 2,
             amount: 675
           },
           {
+            id: 3,
             seasonId: 1234,
             qSeasonId: 5,
             place: 3,
@@ -136,7 +146,7 @@ class App extends React.Component {
 
     games: [
       {
-        id: 12345,
+        id: 1,
         date: 1586995200000,
         hostName: "Bob's your uncle",
         transportRequired: false,
@@ -148,6 +158,8 @@ class App extends React.Component {
         paidPlayersRemaining: 0,
         averageStack: 85220,
         clockId: 234,
+        seasonGame: 7,
+        quarterlyGame: 7,
         payouts: [
           {
             id: 56,
@@ -171,8 +183,9 @@ class App extends React.Component {
             gameId: 3,
             firstName: 'Josh',
             lastName: 'Bygosh',
+            name: 'Josh Bygosh',
             points: 42,
-            finish: 9,
+            place: 9,
             knockedOut: true,
             buyInCollected: 40,
             rebuyAddOnCollected: null,
@@ -186,8 +199,9 @@ class App extends React.Component {
             gameId: 3,
             firstName: 'John',
             lastName: 'Yoman',
+            name: 'John Yoman',
             points: 35,
-            finish: 10,
+            place: 10,
             knockedOut: true,
             buyInCollected: 40,
             rebuyAddOnCollected: 40,
@@ -201,6 +215,7 @@ class App extends React.Component {
             gameId: 3,
             firstName: 'Homer',
             lastName: null,
+            name: 'Homer',
             points: null,
             finish: null,
             knockedOut: null,
@@ -216,6 +231,7 @@ class App extends React.Component {
             gameId: 3,
             firstName: 'Cameron',
             lastName: 'Cantrell',
+            name: 'Cameron Cantrell',
             points: null,
             finish: null,
             knockedOut: null,
@@ -231,6 +247,7 @@ class App extends React.Component {
             gameId: 3,
             firstName: null,
             lastName: 'Kibby',
+            name: 'Kibby',
             points: null,
             finish: null,
             knockedOut: true,
@@ -243,7 +260,7 @@ class App extends React.Component {
         ]
       },
       {
-        id: 12345,
+        id: 2,
         date: 1587600000000,
         hostName: "Mark Bark",
         transportRequired: false,
