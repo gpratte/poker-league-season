@@ -10,6 +10,19 @@ The following shows what I did step by step.
 
 Each step can be found on the cooresponding branch.
 
+## step 03 bootstrap
+Oh yeah, it's nice to add Bootstrap to the app for two reasons:
+
+It looks nice. Nice buttons, tables, rows and columns, ...
+Functionality - accordions, modal dialogs, ...
+React Bootstrap can be found at https://react-bootstrap.github.io/
+* npm install --save react-bootstrap bootstrap
+
+Always need lodash
+* npm install --save lodash
+
+Now have a tab for quarters and a tab for games.
+
 ## step 02 screen layout
 **Note:** Leaving out the git commands from this step on.
 
