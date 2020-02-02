@@ -10,6 +10,9 @@ The following shows what I did step by step.
 
 Each step can be found on the cooresponding branch.
 
+## step 04 details
+Fleshed out the details react component using static data.
+
 ## step 03 bootstrap
 Oh yeah, it's nice to add Bootstrap to the app for two reasons:
 
