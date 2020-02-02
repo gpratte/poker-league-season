@@ -10,6 +10,9 @@ The following shows what I did step by step.
 
 Each step can be found on the cooresponding branch.
 
+## step 06 games
+Fleshed out the games of a season
+
 ## step 05 quarterly seasons
 Show each quarter in a React Bootstrap Accordian.
 
