@@ -10,8 +10,11 @@ The following shows what I did step by step.
 
 Each step can be found on the cooresponding branch.
 
+## step 05 quarterly seasons
+Show each quarter in a React Bootstrap Accordian.
+
 ## step 04 details
-Fleshed out the details react component using static data.
+Fleshed out the season details react component using static data.
 
 ## step 03 bootstrap
 Oh yeah, it's nice to add Bootstrap to the app for two reasons:
@@ -42,7 +45,7 @@ The same mock up showing the season with the games tab
 ![current poker game](this-and-that/img/Season_games.png)
 
 #### Presentation (react) components
-* Details
+* SeasonDetails
 * Quaters
 * Games
 
