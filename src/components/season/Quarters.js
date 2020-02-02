@@ -23,7 +23,7 @@ class Quarters extends React.Component {
     const quarters = this.props.value;
     return quarters.map((quarter, index) => {
       return (
-        <Accordion>
+        <Accordion key={quarter.quarter}>
           <Card>
             <Card.Header>
               <Accordion.Toggle as={Button} variant="link" eventKey="0">

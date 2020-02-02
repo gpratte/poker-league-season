@@ -35,7 +35,7 @@ class QuarterlySeason extends React.Component {
           </tbody>
         </Table>
 
-        <Standings value={players}/>
+        <Standings value={ {players:players} }/>
 
         <Payouts value={payouts}/>
       </div>

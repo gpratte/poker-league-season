@@ -3,7 +3,7 @@ import Table from 'react-bootstrap/Table';
 
 class Standings extends React.Component {
 
-  renderStandings(players) {
+  renderStandings(players, hideEntries) {
     return players.map((player, index) => {
       const {id, place, name, points, entries} = player
       return (
@@ -11,14 +11,14 @@ class Standings extends React.Component {
           <td>{place}</td>
           <td>{name}</td>
           <td>{points}</td>
-          <td>{entries}</td>
+          { hideEntries ? '' : <td>{entries}</td>}
         </tr>
       )
     })
   }
 
   render() {
-    const players = this.props.value;
+    const {players, hideEntries} = this.props.value;
 
     return (
       <Table striped bordered size="sm">
@@ -27,11 +27,11 @@ class Standings extends React.Component {
           <th>Place</th>
           <th>Name</th>
           <th>Points</th>
-          <th>Entries</th>
+          { hideEntries ? '' : <th>Entries</th> }
         </tr>
         </thead>
         <tbody>
-        {this.renderStandings(players)}
+        {this.renderStandings(players, hideEntries)}
         </tbody>
       </Table>
     );
