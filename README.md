@@ -21,6 +21,8 @@ React Bootstrap can be found at https://react-bootstrap.github.io/
 Always need lodash
 * npm install --save lodash
 
+Now have a tab for quarters and a tab for games.
+
 ## step 02 screen layout
 **Note:** Leaving out the git commands from this step on.
 
