@@ -5,7 +5,9 @@ import Tab from 'react-bootstrap/Tab';
 import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-import Details from './Details'
+import SeasonDetails from './SeasonDetails'
+import Standings from '../common/Standings'
+import Quarters from './Quarters'
 
 class Season extends React.Component {
   render() {
@@ -20,14 +22,16 @@ class Season extends React.Component {
               </Accordion.Toggle>
             </Card.Header>
             <Accordion.Collapse eventKey="0">
-              <Card.Body><Details value={season}/></Card.Body>
+              <Card.Body><SeasonDetails value={season}/></Card.Body>
             </Accordion.Collapse>
           </Card>
         </Accordion>
 
+        <Standings value={season.players}/>
+
         <Tabs className="style1" defaultActiveKey="profile" id="uncontrolled-tab-example">
           <Tab className="style2" eventKey="quarters" title="&nbsp;&nbsp;&nbsp;Quarters&nbsp;&nbsp;&nbsp;">
-            <h1>Quarters</h1>
+            <Quarters value={season.quarterlySeasons}/>
           </Tab>
           <Tab className="style2" eventKey="games" title="&nbsp;&nbsp;&nbsp;Games&nbsp;&nbsp;&nbsp;">
             <h1>Games</h1>

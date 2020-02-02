@@ -1,20 +1,9 @@
 import React from 'react'
 import moment from 'moment-timezone'
 import Table from 'react-bootstrap/Table';
+import Payouts from '../common/Payouts'
 
-class Details extends React.Component {
-
-  renderPayouts(payouts) {
-    return payouts.map((payout, index) => {
-      const {id, place, amount} = payout
-      return (
-        <tr key={id}>
-          <td>{place}</td>
-          <td>${amount}</td>
-        </tr>
-      )
-    })
-  }
+class SeasonDetails extends React.Component {
 
   render() {
     const {
@@ -50,21 +39,10 @@ class Details extends React.Component {
           </tbody>
         </Table>
 
-        <Table striped bordered size="sm">
-          <thead>
-          <tr>
-            <th>Place</th>
-            <th>Amount</th>
-          </tr>
-          </thead>
-          <tbody>
-          {this.renderPayouts(payouts)}
-          </tbody>
-        </Table>
-        <hr/>
+        <Payouts value={payouts}/>
       </div>
     );
   }
 }
 
-export default Details
+export default SeasonDetails
