@@ -13,7 +13,7 @@ import Games from './Games'
 
 class Season extends React.Component {
   render() {
-    const season = this.props.value;
+    const season = this.props.season;
 
     const startDate = moment(season.start).tz('America/Chicago').format('YYYY')
     const endDate = moment(season.end).tz('America/Chicago').format('YYYY')
