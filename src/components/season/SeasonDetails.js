@@ -9,8 +9,8 @@ class SeasonDetails extends React.Component {
     const {
       start, end, numGamesPlayed, totalCombinedAnnualTocCalculated, kittyCalculated, payouts} = this.props.value;
 
-    const startDate = moment(start).tz('America/Chicago').format('MM/DD')
-    const endDate = moment(end).tz('America/Chicago').format('MM/DD')
+    const startDate = moment(start).tz('America/Chicago').format('MM/DD/YYYY')
+    const endDate = moment(end).tz('America/Chicago').format('MM/DD/YYYY')
 
     return (
       <div>
