@@ -10,6 +10,9 @@ The following shows what I did step by step.
 
 Each step can be found on the cooresponding branch.
 
+## step 07 show season date
+Show the date (YYYY - YYYY) at the top of the season view
+
 ## step 06 games
 Fleshed out the games of a season
 

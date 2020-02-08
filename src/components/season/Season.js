@@ -1,5 +1,6 @@
 import React from 'react'
 import './Season.css'
+import moment from 'moment-timezone'
 import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
 import Accordion from 'react-bootstrap/Accordion';
@@ -13,9 +14,14 @@ import Games from './Games'
 class Season extends React.Component {
   render() {
     const season = this.props.value;
+
+    const startDate = moment(season.start).tz('America/Chicago').format('YYYY')
+    const endDate = moment(season.end).tz('America/Chicago').format('YYYY')
+
+
     return (
       <div>
-        <h2>sdf</h2>
+        <h3>{'' + startDate + ' - '  + endDate}</h3>
         <Accordion>
           <Card>
             <Card.Header>
