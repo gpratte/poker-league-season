@@ -10,6 +10,18 @@ The following shows what I did step by step.
 
 Each step can be found on the cooresponding branch.
 
+## step 08 redux
+First needed to be able to access the redux libraries.
+* npm install --save react-redux
+* npm install --save redux
+
+Created a seasonStore for the season data.
+
+There are no actions (yet) for this project.
+
+The best way to see what was done to move to redux is to compare
+this branch with the previous branch.
+
 ## step 07 show season date
 Show the date (YYYY - YYYY) at the top of the season view
 
